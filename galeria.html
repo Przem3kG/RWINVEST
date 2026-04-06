@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - RW INVEST</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styl lokalny dla Lightboxa i strzałek */
+        #lightbox { opacity: 0; transition: opacity 0.3s ease; }
+        
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--white);
+            font-size: 50px;
+            font-weight: 300;
+            cursor: pointer;
+            padding: 20px;
+            user-select: none;
+            transition: var(--transition);
+            background: rgba(0,0,0,0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+        }
+        .lightbox-nav:hover {
+            color: var(--primary);
+            background: rgba(0,0,0,0.6);
+            transform: translateY(-50%) scale(1.1);
+        }
+        #lightbox-prev { left: 40px; }
+        #lightbox-next { right: 40px; }
+
+        @media (max-width: 768px) {
+            #lightbox-prev { left: 10px; }
+            #lightbox-next { right: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">RW INVEST</a>
+            <ul class="nav-menu">
+                <li><a href="o-firmie.html">O firmie</a></li>
+                <li><a href="preparaty.html">Preparaty</a></li>
+                <li><a href="uslugi.html">Oferta</a></li>
+                <li><a href="galeria.html" style="color: var(--primary);">Galeria</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="page-header reveal">
+        <h1>Galeria realizacji</h1>
+        <p>Zobacz efekty naszej pracy na obiektach przemysłowych.</p>
+    </div>
+
+    <section class="gallery-section">
+        <div class="gallery-grid">
+            
+            <div class="gallery-item reveal delay-1"><img src="img/p1.JPG" alt="Czyszczenie przemysłowe 1"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-2"><img src="img/p2.JPG" alt="Czyszczenie przemysłowe 2"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-3"><img src="img/p3.JPG" alt="Czyszczenie przemysłowe 3"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-1"><img src="img/p4.JPG" alt="Czyszczenie przemysłowe 4"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-2"><img src="img/p6.JPG" alt="Czyszczenie przemysłowe 6"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-3"><img src="img/p7.JPG" alt="Czyszczenie przemysłowe 7"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-1"><img src="img/p8.JPG" alt="Czyszczenie przemysłowe 8"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-2"><img src="img/p9.JPG" alt="Czyszczenie przemysłowe 9"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-3"><img src="img/p10.JPG" alt="Czyszczenie przemysłowe 10"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-1"><img src="img/p11.JPG" alt="Czyszczenie przemysłowe 11"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-2"><img src="img/p12.JPG" alt="Czyszczenie przemysłowe 12"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-3"><img src="img/p13.JPG" alt="Czyszczenie przemysłowe 13"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-1"><img src="img/p14.JPG" alt="Czyszczenie przemysłowe 14"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-2"><img src="img/p15.JPG" alt="Czyszczenie przemysłowe 15"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-3"><img src="img/p16.JPG" alt="Czyszczenie przemysłowe 16"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-1"><img src="img/p17.JPG" alt="Czyszczenie przemysłowe 17"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-2"><img src="img/p18.JPG" alt="Czyszczenie przemysłowe 18"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-3"><img src="img/p19.JPG" alt="Czyszczenie przemysłowe 19"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-1"><img src="img/p20.JPG" alt="Czyszczenie przemysłowe 20"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-2"><img src="img/p21.JPG" alt="Czyszczenie przemysłowe 21"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-3"><img src="img/p22.JPG" alt="Czyszczenie przemysłowe 22"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-1"><img src="img/p23.JPG" alt="Czyszczenie przemysłowe 23"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-2"><img src="img/p24.JPG" alt="Czyszczenie przemysłowe 24"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-3"><img src="img/p25.JPG" alt="Czyszczenie przemysłowe 25"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-1"><img src="img/p26.JPG" alt="Czyszczenie przemysłowe 26"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-2"><img src="img/p27.JPG" alt="Czyszczenie przemysłowe 27"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-3"><img src="img/p28.JPG" alt="Czyszczenie przemysłowe 28"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-1"><img src="img/p29.JPG" alt="Czyszczenie przemysłowe 29"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-2"><img src="img/p30.JPG" alt="Czyszczenie przemysłowe 30"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-3"><img src="img/p31.JPG" alt="Czyszczenie przemysłowe 31"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-1"><img src="img/p32.JPG" alt="Czyszczenie przemysłowe 32"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-2"><img src="img/p33.JPG" alt="Czyszczenie przemysłowe 33"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-3"><img src="img/p34.JPG" alt="Czyszczenie przemysłowe 34"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-1"><img src="img/p35.JPG" alt="Czyszczenie przemysłowe 35"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-2"><img src="img/p36.JPG" alt="Czyszczenie przemysłowe 36"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-3"><img src="img/p37.JPG" alt="Czyszczenie przemysłowe 37"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-1"><img src="img/p38.JPG" alt="Czyszczenie przemysłowe 38"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-2"><img src="img/p39.JPG" alt="Czyszczenie przemysłowe 39"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-3"><img src="img/p40.JPG" alt="Czyszczenie przemysłowe 40"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-1"><img src="img/p41.JPG" alt="Czyszczenie przemysłowe 41"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-2"><img src="img/p42.JPG" alt="Czyszczenie przemysłowe 42"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-3"><img src="img/p43.JPG" alt="Czyszczenie przemysłowe 43"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-1"><img src="img/p44.JPG" alt="Czyszczenie przemysłowe 44"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-2"><img src="img/p45.JPG" alt="Czyszczenie przemysłowe 45"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-3"><img src="img/p46.JPG" alt="Czyszczenie przemysłowe 46"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-1"><img src="img/p47.JPG" alt="Czyszczenie przemysłowe 47"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-2"><img src="img/p48.JPG" alt="Czyszczenie przemysłowe 48"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-3"><img src="img/p49.JPG" alt="Czyszczenie przemysłowe 49"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-1"><img src="img/p50.JPG" alt="Czyszczenie przemysłowe 50"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-2"><img src="img/p51.JPG" alt="Czyszczenie przemysłowe 51"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-3"><img src="img/p52.JPG" alt="Czyszczenie przemysłowe 52"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-1"><img src="img/p53.JPG" alt="Czyszczenie przemysłowe 53"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-2"><img src="img/p54.JPG" alt="Czyszczenie przemysłowe 54"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-3"><img src="img/p55.JPG" alt="Czyszczenie przemysłowe 55"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-1"><img src="img/p56.JPG" alt="Czyszczenie przemysłowe 56"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-2"><img src="img/p57.JPG" alt="Czyszczenie przemysłowe 57"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-3"><img src="img/p58.JPG" alt="Czyszczenie przemysłowe 58"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-1"><img src="img/p59.JPG" alt="Czyszczenie przemysłowe 59"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-2"><img src="img/p60.JPG" alt="Czyszczenie przemysłowe 60"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-3"><img src="img/p70.JPG" alt="Czyszczenie przemysłowe 70"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-1"><img src="img/p71.JPG" alt="Czyszczenie przemysłowe 71"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-2"><img src="img/p72.JPG" alt="Czyszczenie przemysłowe 72"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-3"><img src="img/p73.JPG" alt="Czyszczenie przemysłowe 73"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-1"><img src="img/p74.JPG" alt="Czyszczenie przemysłowe 74"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-2"><img src="img/p75.JPG" alt="Czyszczenie przemysłowe 75"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+            <div class="gallery-item reveal delay-3"><img src="img/p76.JPG" alt="Czyszczenie przemysłowe 76"><div class="gallery-overlay"><span>Powiększ 🔍</span></div></div>
+        </div>
+    </section>
+
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightbox-close">&times;</span>
+        <span class="lightbox-nav" id="lightbox-prev">&#10094;</span>
+        <img id="lightbox-img" src="" alt="Powiększone zdjęcie">
+        <span class="lightbox-nav" id="lightbox-next">&#10095;</span>
+    </div>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4 style="color: var(--primary); font-size: 26px;">RW INVEST</h4>
+                <p>Nowoczesne i bezpieczne chemiczne czyszczenie instalacji, a także kompleksowe roboty ogólnobudowlane i budowa osiedli na terenie całej Polski.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Nawigacja</h4>
+                <ul>
+                    <li><a href="o-firmie.html">O nas</a></li>
+                    <li><a href="preparaty.html">Preparaty</a></li>
+                    <li><a href="uslugi.html">Oferta</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Kontakt</h4>
+                <ul>
+                    <li>📞 +48 602 107 700</li>
+                    <li>✉️ rwinvest.office@gmail.com</li>
+                    <li>🕒 Pogotowie 24/7</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 RW INVEST. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - RW INVEST</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">RW INVEST</a>
+            <ul class="nav-menu">
+                <li><a href="o-firmie.html">O firmie</a></li>
+                <li><a href="preparaty.html">Preparaty</a></li>
+                <li><a href="uslugi.html">Oferta</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <h1>Skontaktuj się z nami</h1>
+    </div>
+
+    <section class="contact-section">
+        
+        <div class="contact-info">
+            <h2>Dane kontaktowe</h2>
+            <p>Jesteśmy do Państwa dyspozycji. Zapraszamy do kontaktu telefonicznego lub mailowego w celu omówienia szczegółów i darmowej wyceny.</p>
+            <br>
+            <p><strong>Telefon:</strong> <a href="tel:501019127">+48 602 107 700</a></p>
+            <p><strong>E-mail:</strong> <a href="mailto:rwinvest.office@gmail.com">rwinvest.office@gmail.com</a></p>
+
+            <div class="areas">
+                <h3>Działamy na obszarze całej Polski!</h3>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h2>Napisz do nas</h2>
+            <form action="#" method="POST" onsubmit="alert('To jest wersja demonstracyjna formularza. Aby działał, należy podpiąć skrypt backendowy (np. PHP).'); return false;">
+                <div class="form-group">
+                    <label for="name">Imię i nazwisko / Firma</label>
+                    <input type="text" id="name" name="name" required placeholder="Wpisz swoje dane">
+                </div>
+                <div class="form-group">
+                    <label for="email">Adres e-mail</label>
+                    <input type="email" id="email" name="email" required placeholder="twoj@email.pl">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Numer telefonu</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Opcjonalnie">
+                </div>
+                <div class="form-group">
+                    <label for="message">Treść wiadomości</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="W czym możemy pomóc?"></textarea>
+                </div>
+                <button type="submit" class="btn">Wyślij wiadomość</button>
+            </form>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4 style="color: var(--primary); font-size: 26px;">RW INVEST</h4>
+                <p>Nowoczesne i bezpieczne chemiczne czyszczenie instalacji, a także kompleksowe roboty ogólnobudowlane i budowa osiedli na terenie całej Polski.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Nawigacja</h4>
+                <ul>
+                    <li><a href="o-firmie.html">O nas</a></li>
+                    <li><a href="preparaty.html">Preparaty</a></li>
+                    <li><a href="uslugi.html">Oferta</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="kontakt.html" style="color: var(--primary);">Kontakt</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Kontakt</h4>
+                <ul>
+                    <li>📞 +48 602 107 700</li>
+                    <li>✉️ rwinvest.office@gmail.com</li>
+                    <li>🕒 Pogotowie 24/7</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 RW INVEST. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
