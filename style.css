@@ -772,8 +772,9 @@ footer {
     .lang-switcher { margin: 20px auto 0; justify-content: center; }
     /* Aktywacja menu mobilnego */
     .menu-toggle { display: flex; }
-    
+        
     .nav-menu {
+        display: flex !important; /* To nadpisze wszelkie błędy i stare ukrycia! */
         position: absolute;
         top: 100%;
         left: -100%; /* Ukryte poza ekranem z lewej strony */
@@ -787,7 +788,7 @@ footer {
     }
     
     .nav-menu.active {
-        left: 0; /* Wjeżdża na ekran */
+        left: 0; /* Wjeżdża na ekran po kliknięciu */
     }
     
     .nav-menu li { margin: 15px 0; }
