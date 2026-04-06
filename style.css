@@ -82,6 +82,7 @@ header {
     list-style: none;
     display: flex;
     gap: 30px;
+    align-items: center; /* To sprawi, że zakładki i języki będą idealnie w tej samej linii */
 }
 .nav-menu li a {
     text-decoration: none;
@@ -706,16 +707,122 @@ footer {
 .contact-form .btn { margin-top: 10px; }
 
 /* =========================================
-   RESPONSJA DLA PODSTRON
+   RESPONSJA I MENU MOBILNE (SMARTFONY I TABLETY)
    ========================================= */
+
+/* Przycisk Hamburgera (Domyślnie ukryty na komputerach) */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1001;
+}
+.menu-toggle .bar {
+    width: 28px;
+    height: 3px;
+    background-color: var(--primary);
+    margin: 4px 0;
+    transition: var(--transition);
+    border-radius: 3px;
+}
+
+/* TABLETY (Poniżej 992px) */
 @media (max-width: 992px) {
+    .hero h1 { font-size: 42px; }
+    .service-row, .service-row:nth-child(even) { flex-direction: column; text-align: center; gap: 40px; }
+    .service-list li { text-align: left; }
+    .service-image img { height: 350px; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
     .contact-section { grid-template-columns: 1fr; }
 }
+
+/* =========================================
+   PRZEŁĄCZNIK JĘZYKÓW (PL / EN)
+   ========================================= */
+   .lang-switcher {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: 10px; /* Delikatny odstęp od ostatniej zakładki */
+}
+.lang-switcher a {
+    text-decoration: none;
+    color: var(--text-light);
+    font-weight: 700;
+    font-size: 15px; /* Zrównanie wielkości z resztą menu */
+    transition: var(--transition);
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent; /* Zapobiega skakaniu paska */
+}
+.lang-switcher a.active {
+    color: var(--primary);
+    border-bottom: 2px solid var(--primary);
+}
+.lang-switcher a:hover {
+    color: var(--primary-dark);
+}
+.lang-separator {
+    color: #cbd5e1;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* SMARTFONY (Poniżej 768px) */
 @media (max-width: 768px) {
+    .lang-switcher { margin: 20px auto 0; justify-content: center; }
+    /* Aktywacja menu mobilnego */
+    .menu-toggle { display: flex; }
+    
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: -100%; /* Ukryte poza ekranem z lewej strony */
+        flex-direction: column;
+        background: var(--white);
+        width: 100%;
+        text-align: center;
+        transition: 0.4s ease-in-out;
+        box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+        padding: 20px 0;
+    }
+    
+    .nav-menu.active {
+        left: 0; /* Wjeżdża na ekran */
+    }
+    
+    .nav-menu li { margin: 15px 0; }
+    .nav-menu li a { font-size: 18px; display: block; padding: 10px; }
+    
+    /* Animacja krzyżyka (X) z hamburgera */
+    .menu-toggle.active .bar:nth-child(1) { transform: translate(0, 11px) rotate(-45deg); }
+    .menu-toggle.active .bar:nth-child(2) { opacity: 0; }
+    .menu-toggle.active .bar:nth-child(3) { transform: translate(0, -11px) rotate(45deg); }
+
+    /* Poprawki odstępów i czcionek dla smartfonów */
+    .hero { padding: 150px 20px 80px; }
+    .hero h1 { font-size: 32px; }
+    .hero p { font-size: 16px; }
+    
+    .section, .why-us-section, .faq-section, .cta-contact { padding: 60px 20px; }
+    .section-header h2, .category-title, .why-us-section h2 { font-size: 28px; }
+    .service-text h2 { font-size: 24px; }
+    
+    .features-wrapper { margin: 40px auto; gap: 20px; }
+    .feature-box { padding: 25px 20px; }
+    
+    .footer-grid { grid-template-columns: 1fr; gap: 30px; text-align: center; }
+    .footer-col ul li a:hover { padding-left: 0; } /* Usunięcie przesuwania linków w stopce na tel */
+
+    /* Poprawki dla podstron na telefony */
     .page-header { padding: 120px 20px 50px; }
-    .page-header h1 { font-size: 32px; }
-    .timeline-item { padding-left: 25px; padding-top: 70px; }
-    .timeline-item::before { top: 25px; left: 25px; transform: none; }
-    .about-content, .contact-info, .contact-form, .service-card, .product-card { padding: 25px; }
-    .about-section, .services-wrapper, .products-section, .gallery-section, .contact-section { margin: 50px auto; }
+    .page-header h1 { font-size: 30px; }
+    
+    .timeline-item { padding-left: 20px; padding-top: 65px; text-align: center; }
+    .timeline-item::before { top: 20px; left: 50%; transform: translateX(-50%); }
+    
+    .about-content, .contact-info, .contact-form, .service-card, .product-card, .order-section { padding: 25px; }
+    .about-section, .services-wrapper, .products-section, .gallery-section, .contact-section { margin: 40px auto; }
+    
+    .product-header h2 { font-size: 24px; }
+    .price-tag { font-size: 20px; }
 }

@@ -12,12 +12,25 @@
     <header>
         <div class="nav-container">
             <a href="index.html" class="logo">RW INVEST</a>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
             <ul class="nav-menu">
                 <li><a href="o-firmie.html">O firmie</a></li>
                 <li><a href="preparaty.html">Preparaty</a></li>
                 <li><a href="uslugi.html">Oferta</a></li>
                 <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="kontakt.html" style="color: var(--primary);">Kontakt</a></li>
+
+                <li class="lang-switcher">
+                    <a href="#" class="active">PL</a>
+                    <span class="lang-separator">|</span>
+                    <a href="index-en.html">EN</a>
+                </li>
             </ul>
         </div>
     </header>
@@ -42,7 +55,7 @@
 
         <div class="contact-form">
             <h2>Napisz do nas</h2>
-            <form action="#" method="POST" onsubmit="alert('To jest wersja demonstracyjna formularza. Aby działał, należy podpiąć skrypt backendowy (np. PHP).'); return false;">
+            <form action="https://formspree.io/f/mgoprdlo" method="POST">
                 <div class="form-group">
                     <label for="name">Imię i nazwisko / Firma</label>
                     <input type="text" id="name" name="name" required placeholder="Wpisz swoje dane">
@@ -78,7 +91,7 @@
                     <li><a href="preparaty.html">Preparaty</a></li>
                     <li><a href="uslugi.html">Oferta</a></li>
                     <li><a href="galeria.html">Galeria</a></li>
-                    <li><a href="kontakt.html" style="color: var(--primary);">Kontakt</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
                 </ul>
             </div>
             <div class="footer-col">

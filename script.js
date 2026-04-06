@@ -117,4 +117,25 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     }
+
+    // 4. Obsługa mobilnego menu (Hamburger)
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navMenu = document.querySelector('.nav-menu');
+
+    if (mobileMenu && navMenu) {
+        // Otwieranie/zamykanie po kliknięciu w hamburgera
+        mobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Automatyczne zamykanie menu po kliknięciu w dowolny link
+        document.querySelectorAll('.nav-menu li a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    }
+
 });

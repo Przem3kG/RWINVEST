@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - RW INVEST</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">RW INVEST</a>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="o-firmie-en.html">About us</a></li>
+                <li><a href="preparaty-en.html">Preparations</a></li>
+                <li><a href="uslugi-en.html">Offer</a></li>
+                <li><a href="galeria-en.html">Gallery</a></li>
+                <li><a href="kontakt-en.html" style="color: var(--primary);">Contact</a></li>
+
+                <li class="lang-switcher">
+                    <a href="kontakt.html">PL</a>
+                    <span class="lang-separator">|</span>
+                    <a href="#" class="active">EN</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <h1>Contact us</h1>
+    </div>
+
+    <section class="contact-section">
+        
+        <div class="contact-info">
+            <h2>Contact details</h2>
+            <p>We are at your disposal. Feel free to contact us by phone or email to discuss details and get a free quote.</p>
+            <br>
+            <p><strong>Phone:</strong> <a href="tel:501019127">+48 602 107 700</a></p>
+            <p><strong>E-mail:</strong> <a href="mailto:rwinvest.office@gmail.com">rwinvest.office@gmail.com</a></p>
+
+            <div class="areas">
+                <h3>We operate throughout Poland!</h3>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h2>Write to us</h2>
+            <form action="https://formspree.io/f/mgoprdlo" method="POST">
+                <div class="form-group">
+                    <label for="name">Name and surname / Company</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your details">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" required placeholder="your@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Optional">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="How can we help you?"></textarea>
+                </div>
+                <button type="submit" class="btn">Send message</button>
+            </form>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4 style="color: var(--primary); font-size: 26px;">RW INVEST</h4>
+                <p>Modern and safe chemical cleaning of installations, as well as comprehensive general construction works and building housing estates throughout Poland.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="o-firmie-en.html">About us</a></li>
+                    <li><a href="preparaty-en.html">Preparations</a></li>
+                    <li><a href="uslugi-en.html">Offer</a></li>
+                    <li><a href="galeria-en.html">Gallery</a></li>
+                    <li><a href="kontakt-en.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li>📞 +48 602 107 700</li>
+                    <li>✉️ rwinvest.office@gmail.com</li>
+                    <li>🕒 Emergency 24/7</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 RW INVEST. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
